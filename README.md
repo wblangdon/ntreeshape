@@ -28,6 +28,12 @@ Calculate number of trees of a given size
 
 </ul>
 
+hmm that was shit
+ \pi
+$\pi$
+&pi;
+<span>&#8730;</span>
+
 Note the mean and variance for various types of tree 
 have been given asymptotically for large trees
 by Flajolet and co-authors.
