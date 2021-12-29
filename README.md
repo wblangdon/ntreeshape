@@ -28,11 +28,8 @@ Calculate number of trees of a given size
 
 </ul>
 
-<!--hmm that was shit
- \pi
-$\pi$-->
-&pi;
-<span>&#8730;</span>
+<!--dont work  \pi $\pi$-->
+<!--pi and square root ok as &pi; <span>&#8730;</span> !-->
 <!--Dec 2021 MathML not supported by GitHub 
 https://github.com/github/markup/issues/551
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -53,8 +50,16 @@ mean depth = (2&pi;(n-1))<sup>0.5</sup>
 
 variance = 4&pi;(&pi;/3-1)(n-1)/2
 
-Note the formulae are often given in terms of
-number of internal nodes, rather than tree size (n, including leaf nodes).
+Notice for random binary trees, although the distribution tends
+to a Gaussian as the trees get bigger,
+it continues to have a broad spread,
+with the standard deviation being 22% <!--0.21725!-->
+of the mean.
+
+
+Formulae are often given in terms of
+number of internal nodes (N), rather than tree size
+(n, including leaf nodes, for binary trees N=(n-1)/2).
 And for trees under 10000 nodes, the actual mean
 and variance can be somewhat different from the 
 asymptotic formula.
