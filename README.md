@@ -25,6 +25,9 @@ Calculate number of trees of a given size
 <li>ntreeshape.cc, Aug 20  2002, r1.22
 <br>Calculate number of trees by depth for a given size
 
+<li>ntreeshape_example141.out
+<br>Expected output of ./ntreeshape 1,141,2 1,100
+
 <li><a href="README.md">README.md</a>
 <br>This file
 
