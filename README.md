@@ -34,12 +34,15 @@ $\pi$-->
 &pi;
 <span>&#8730;</span>
 
+<msqrt> base </msqrt>
+<mroot> base index </mroot>
+
 Note the mean and variance for various types of tree 
 have been given asymptotically for large trees
 by Flajolet and co-authors.
 E.g. for random binary trees:
 
-mean depth = $<span>&#8730;2&pi;(n-1)</span>
+mean depth = <span>&#8730;2&pi;(n-1)</span>
 
 variance = 4&pi;(&pi;/3-1)(n-1)/2
 
