@@ -31,8 +31,8 @@ Calculate number of trees of a given size
 Note the mean and variance for various types of tree 
 have been given asymptotically for large trees
 by Flajolet and co-authors.
-E.g. for random binary trees mean depth = \sqrt{2\pi(n-1)}
-variance = 4\pi(\pi/3-1)(n-1)/2
+E.g. for random binary trees mean depth = $\sqrt{2\pi(n-1)$}
+variance = $4\pi(\pi/3-1)(n-1)/2$
 Note the formulae are often given in terms of
 number of internal nodes, rather than tree size (n, including leaf nodes).
 And for trees under 10000 nodes, the actual mean
