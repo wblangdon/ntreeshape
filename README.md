@@ -22,7 +22,12 @@ Contents
 <br>
 Calculate number of trees of a given size
 
-<li>ntreeshape.cc, Aug 20  2002, r1.22
+<li>ntrees_example141.out
+<br>Expected output of ./ntrees 1,141,2 1 0 1
+<br>Note by having only one leaf and one binary function
+the number of programs is the same as the number of tree shapes
+
+<li>ntreeshape.cc, Aug 20  2002, r1.22 (now r1.23)
 <br>Calculate number of trees by depth for a given size
 
 <li>ntreeshape_example141.out

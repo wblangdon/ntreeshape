@@ -3,7 +3,11 @@
 // See ETL-TR-95-35 14 Nov 1995 Hitoshi Iba Random tree generator for GP
 // Or Random Generation of Trees, Laurent Alonso and Rene Schott, Kulwer, 1995
 
-#define main_version "19 October 1997 $Revision: 1.2 $"
+#define main_version "19 October 1997 $Revision: 1.5 $"
+
+//WBL 29 Dec 21  Ok with gcc version 4.8.5 and gcc version 9.3.1
+
+//WBL  6 May 01  Tweak so compatible with gcc 2.95.2
 
 //WBL 21 Jan 98  Add display of numberdnz
 
@@ -19,15 +23,20 @@
 //               BUGFIX limit (efficiency saving only), 
 //               BUGFIX display of done time
 
+//compiling on Linux g++ -o ntrees -O2 -Wno-write-strings ntrees.cc
+//compiling in 2020  g++ -o ntrees -O2 ntrees.cc -lm
 //compiling on SUN   g++ -o ntrees -O2 ntrees.cc -lg++ -lm
 //compiling on Alpha cxx -o ntrees -O5 ntrees.cc -lm
 // Includes main function
 
-#include <iostream.h>
+#include <iostream>
 #include <float.h>
 #include <assert.h>
 #include <math.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+using namespace std;
 
 //dont change!
 #define max_arity 4
@@ -195,7 +204,7 @@ int main(int argc, char * argv[])
       error("Error on ",argv[1]);
     }
 
-    const arityc[5] = {0,0,0,0,0};
+    const int arityc[5] = {0,0,0,0,0};
     {for(int i=2; i<argc;i++) {
       if((sscanf(argv[i],"%d",&arityc[i-2])!=1) || (arityc[i-2] < 0) )
 	error("Syntax error on ", argv[i]);
