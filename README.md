@@ -33,7 +33,8 @@ Calculate number of trees of a given size
 $\pi$-->
 &pi;
 <span>&#8730;</span>
-
+<!--Dec 2021 MathML not supported by GitHub 
+https://github.com/github/markup/issues/551
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
 <mrow><msup><mrow><mi>e</mi></mrow><mrow><msqrt><mi>x</mi></msqrt></mrow></msup><mo>-</mo><mfrac><mrow><mfrac><mrow><msup><mrow><mo>sin</mo></mrow><mrow><mo>-</mo><mn>1</mn></mrow></msup><mspace width="0.167em"></mspace><mfenced open="(" close=")" separators=""><mn>2</mn><mspace width="0.167em"></mspace><mi>x</mi></mfenced></mrow><mrow><mn>2</mn><mo>&times;</mo><msup><mrow><mn>10</mn></mrow><mrow><mn>10</mn></mrow></msup><mo>+</mo><msup><mrow><mi>x</mi></mrow><mrow><mn>3</mn></mrow></msup></mrow></mfrac></mrow><mrow><mo>-</mo><mn>12</mn></mrow></mfrac></mrow>
 </math>
@@ -41,12 +42,14 @@ $\pi$-->
 <msqrt> base </msqrt>
 <mroot> base index </mroot>
 
+!-->
+
 Note the mean and variance for various types of tree 
 have been given asymptotically for large trees
 by Flajolet and co-authors.
 E.g. for random binary trees:
 
-mean depth = <span>&#8730;2&pi;(n-1)</span>
+mean depth = (2&pi;(n-1))<sup>0.5</sup>
 
 variance = 4&pi;(&pi;/3-1)(n-1)/2
 
