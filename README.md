@@ -66,7 +66,8 @@ Also for trees under 10000 nodes, the actual mean
 and variance can be somewhat different from the 
 asymptotic formula.
 
-
+Note: in this version of ntreeshape.cc
+depth starts at 1 (rather than zero).
 
 As an example of software bit-rot, 
 consider the differences between the first versions

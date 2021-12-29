@@ -2,7 +2,7 @@
 // W.B.Langdon cwi.nl
 // based on ntrees.cc r1.2
 
-#define main_version "12 March 1999 $Revision: 1.22a $"
+#define main_version "12 March 1999 $Revision: 1.23 $"
 
 //WBL 29 Dec 21  Convert to gcc version 4.8.5 and gcc version 9.3.1
 //WBL 20 Aug 02  Add code from ntrees.cc r1.3 to make self contained 
