@@ -60,7 +60,7 @@ of the mean.
 Formulae are often given in terms of
 number of internal nodes (N), rather than tree size
 (n, including leaf nodes, for binary trees N=(n-1)/2).
-And for trees under 10000 nodes, the actual mean
+Also for trees under 10000 nodes, the actual mean
 and variance can be somewhat different from the 
 asymptotic formula.
 
