@@ -27,3 +27,9 @@ Calculate number of trees of a given size
 <br>This file
 
 </ul>
+
+As an example of software bit-rot, 
+consider the differences between the first versions
+of these C++ files in GitHub (dating from 2001 and 2002)
+and the current versions.
+http://blog.ieeesoftware.org/2020/03/bit-rot-computer-software-degrades-over.html

@@ -2,8 +2,9 @@
 // W.B.Langdon cwi.nl
 // based on ntrees.cc r1.2
 
-#define main_version "12 March 1999 $Revision: 1.22 $"
+#define main_version "12 March 1999 $Revision: 1.22a $"
 
+//WBL 29 Dec 21  Convert to gcc version 4.8.5 and gcc version 9.3.1
 //WBL 20 Aug 02  Add code from ntrees.cc r1.3 to make self contained 
 //WBL  5 Apr 99  Add command line choice and make cache a proper class
 //               Add calculation of mean shape
@@ -17,7 +18,14 @@
 
 // Includes main function
 
-#include <iostream.h>
+/*Software bit rot help given by
+https://stackoverflow.com/questions/13049978/fatal-error-iostream-h-no-such-file-or-directory
+https://stackoverflow.com/questions/15185801/cout-was-not-declared-in-this-scope
+https://stackoverflow.com/questions/3223732/how-to-instruct-gcc-to-stop-after-5-errors
+https://stackoverflow.com/questions/27705689/dealing-with-ambiguous-declarations-in-c
+*/
+#include <iostream>
+using namespace std;
 #include <float.h>
 #include <assert.h>
 #include <math.h>
@@ -224,6 +232,7 @@ void pr(const int i, const int d, const double t, const char* s)
 }
 ///////////////////////////////  MAIN
 
+namespace bitrot {
 class pair {
   void set(const int d, const double v) { loc = d; value = v;}
 public:
@@ -296,6 +305,7 @@ public:
     cout<<endl;
   }
 };//endclass mm;
+}//end bitrot
 
 int main(int argc, char * argv[])
 {
@@ -364,7 +374,7 @@ int main(int argc, char * argv[])
     if(percent) {
     cout<<"#size percentiles\n";
     for(int i=start;i<=end;i+=incr) {
-      mm data(i);
+      bitrot::mm data(i);
       for(int d=dstart;d<=dend;d+=dincr) {
 	data.update(d,count2(i,d));
       }
@@ -390,7 +400,7 @@ int main(int argc, char * argv[])
     if(gradient) {
     cout<<"#gradient\n";
     for(int i=start;i<=end;i+=incr) {
-      mm data(i);
+      bitrot::mm data(i);
       for(int d=dstart;d<=dend;d+=dincr) {
 	const double f0 = count2(i,d);
 	if(f0>0) {
